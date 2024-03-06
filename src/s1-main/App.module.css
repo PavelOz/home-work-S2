@@ -7,5 +7,19 @@
 }
 
 .hwTitle {
+font-family: Montserrat;
+font-size: 22px;
+font-weight: 600;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
 
+
+}
+
+#hw1 {
+    height: 100hv;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red
 }
