@@ -1,31 +1,48 @@
 .message {
-
+  /* Add your colors, padding, margins, etc. */
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
 }
 
 .imageAndText {
-
+  display: flex;
 }
 
 .imageAndText img {
-
+  border-radius: 50%;
+  width: 40px; /* Example size, adjust as needed */
+  height: 40px;
+  margin-right: 10px;
 }
 
 .text {
-
+  background-color: #e5e5ea; /* Example color */
+  border-radius: 10px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
 }
 
 .text:after {
-
 }
 
 .name {
-
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .messageText {
-
+  white-space: pre-wrap;
 }
 
 .time {
-
+  align-self: flex-end;
+  font-size: 0.75rem; /* Example size, adjust as needed */
+  color: #8e8e93; /* Example color */
+  margin-top: 5px;
 }
