@@ -1,36 +1,66 @@
 .button {
-}
-
-.disabled {
-}
-
-.secondary {
+    /* Base styles that all buttons have */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s, transform 0.1s;
+    /* other base styles */
 }
 
 .default {
-}
-
-.red {
+    background-color: #0066CC; /* Blue */
+    color: white;
 }
 
 .default:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+.default:active {
+    background-color: #004d99; /* Even darker blue */
+    transform: scale(0.98);
+}
+
+.red {
+    background-color: #FF1A47; /* Red */
+    color: white;
 }
 
 .red:hover {
-}
-
-.secondary:hover {
-}
-
-
-.default:active {
-}
-
-.secondary:active {
+    background-color: #e6143b; /* Darker red */
 }
 
 .red:active {
+    background-color: #cc132c; /* Even darker red */
+    transform: scale(0.98);
+}
+
+.secondary {
+    background-color: #E5F0FA; /* Light blue */
+    color: #0066CC; /* Blue text */
+    border: 1px solid #0066CC;
+}
+
+.secondary:hover {
+    background-color: #cce4f7; /* Slightly darker light blue */
+}
+
+.secondary:active {
+    background-color: #b3d9f5; /* Darker light blue */
+    transform: scale(0.98);
+}
+
+.disabled {
+    background-color: #cccccc; /* Grey */
+    color: #666666; /* Dark grey text */
+    cursor: not-allowed;
 }
 
 .button:disabled {
+    background-color: #cccccc; /* Same grey */
+    color: #666666; /* Same dark grey text */
+    cursor: not-allowed;
+    /* You may want to ensure no other styles apply, like no hover or active */
 }
