@@ -1,25 +1,82 @@
+/* Style for the sidebar container */
 .sidebar {
+    width: 250px; /* Adjust as needed */
+    background-color: #fff; /* Adjust to the color you want */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    z-index: 100;
+    padding-top: 50px;
+    font-family: Montserrat;
+font-size: 22px;
+font-weight: 600;
+line-height: 26.82px;
+text-align: left;
+
 }
 
+/* Style for the sidebar when it's open */
 .sidebar.open {
+    transform: translateX(0);
 }
 
+/* Style for the background overlay */
 .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
 }
-
 .nav {
+    padding-top: 10px; /* This adds space between the close button and the first nav link */
+    /* ... existing styles ... */
 }
 
+/* Style for the navigation links */
 .nav a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px; /* Adjust as needed */
+    border-bottom: 1px solid #eaeaea; /* Optional */
 }
 
+/* Hover state for the links */
 .nav a:hover {
+    background-color: #f0f0f0;
+    color: #58ACFF;
+    ; /* Adjust to the color you want */
 }
 
+/* Active state for the links */
 .nav a.active {
-}
-.close {
+    background-color: #e0e0e0; /* Adjust to the color you want */
+    color: #0059B2;    ;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
+/* Style for the close button */
+.close {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    
+}
+
+/* Style for the close button image */
 .close img {
+    width: 24px; /* Adjust as needed */
+    height: 24px; /* Adjust as needed */
 }
