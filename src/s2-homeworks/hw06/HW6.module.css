@@ -1,5 +1,43 @@
+/* Container for the buttons */
 .buttonsContainer {
+    display: flex;
+    justify-content: start; /* Aligns buttons to the left */
+    gap: 10px; /* Adjust the space between buttons */
+    padding: 10px; /* Adds space inside the container */
 }
+  
+  /* Container for the editable span */
+  .editableSpanContainer {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 10px; /* Space between the icon and the span */
+    padding: 10px; /* Padding inside the container */
 
-.editableSpanContainer {
-}
+  }
+  
+  /* Style for the edit icon, assuming you have an <img> or some element with class .editIcon */
+  .editIcon {
+    /* Adjust width and height as needed */
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* You may want to style your buttons as well */
+  .button {
+    padding: 5px 15px; /* Adds padding inside the button */
+    border: 1px solid #blue; /* Border color */
+    background-color: #blue; /* Background color */
+    color: white; /* Text color */
+    text-transform: uppercase; /* Makes the button text uppercase */
+    cursor: pointer; /* Changes the cursor to indicate button */
+    /* Add any additional button styling here */
+  }
+  
+  /* Style for the span that will be editable */
+  .span {
+    /* If you want to style the text or span itself */
+    border: 1 solid, blue;
+    border-radius: 3px;
+    cursor: text; /* Indicates the text can be edited */
+  }
+  

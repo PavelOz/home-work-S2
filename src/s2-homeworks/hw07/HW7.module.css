@@ -1,2 +1,6 @@
 .container {
-}
+    padding: 20px;
+    font-family: Arial, sans-serif; 
+    display: inline-block;/* Use the font-family that matches your design */
+  }
+  
