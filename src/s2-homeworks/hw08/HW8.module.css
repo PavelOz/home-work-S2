@@ -1,23 +1,53 @@
+/* Styles for individual table rows */
 .item {
+    background-color: #f9f9f9; /* Light grey background for each item */
+    border-bottom: 1px solid #e1e1e1; /* Adds a separator between items */
+    color: #333; /* Darker text for better readability */
+    padding: 8px; /* Padding inside each cell for spacing */
 }
 
+/* Special styling for the last item in the list to differentiate */
 .item:last-of-type {
+    border-bottom: 2px solid #ccc; /* Make the last item's border thicker and darker */
 }
 
+/* Container for users, likely to be a table */
 .users {
+    width: 100%; /* Ensures the table uses the full width of its container */
+    border-collapse: collapse; /* Collapses border to avoid double lines */
+    margin-top: 20px; /* Adds space above the user table */
+    font-family: Arial, sans-serif; /* Sets a clean, readable typeface */
 }
 
+/* Container for any buttons or actions related to users */
 .buttonsContainer {
+    display: flex; /* Flexbox for easy alignment of contained buttons */
+    justify-content: space-between; /* Distributes space between buttons evenly */
+    padding: 10px 0; /* Padding above and below the container */
 }
 
+/* General container for layout purposes */
 .container {
+    max-width: 960px; /* Maximum width of the container for a manageable line length */
+    margin: auto; /* Centers the container within its parent */
+    padding: 20px; /* Padding inside the container for spacing from the edges */
 }
 
+/* Table header class, likely for <thead> or similar */
 .thead {
+    background-color: #505050; /* Dark background for the header for contrast */
+    color: #fff; /* White text color for contrast against the dark background */
+    text-align: left; /* Aligns header text to the left */
 }
 
+/* Column specifically for names */
 .nameCol {
+    width: 70%; /* Allocates 70% of the width to the name column */
+    padding-left: 10px; /* Padding to the left for alignment and spacing */
 }
 
+/* Column specifically for ages */
 .ageCol {
+    width: 30%; /* Allocates 30% of the width to the age column */
+    text-align: center; /* Centers age values */
 }
